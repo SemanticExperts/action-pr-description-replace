@@ -32,7 +32,7 @@ try {
 
   core.setOutput('body', params.body);
 
-  await octokit.pulls.update(params);
+  octokit.pulls.update(params);
 } catch (error) {
   core.setFailed(error.message);
 }
