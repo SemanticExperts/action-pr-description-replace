@@ -1,0 +1,23 @@
+{
+  "name": "action-pr-description-replace",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaskar2008/action-pr-description-replace.git"
+  },
+  "author": "kaskar2008",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaskar2008/action-pr-description-replace/issues"
+  },
+  "homepage": "https://github.com/kaskar2008/action-pr-description-replace#readme",
+  "devDependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+name: 'PR description replace'
+description: 'Replaces string in PR description'
+inputs:
+  github_token:
+    description: 'The GITHUB_TOKEN secret'
+    required: true
+  find:
+    description: 'What to find (could be a regex)'
+    default: ''
+  replace:
+    description: 'Replace found part with'
+    default: ''
+outputs:
+  body:
+    description: 'New description body'
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: git-pull-request
+  color: green
