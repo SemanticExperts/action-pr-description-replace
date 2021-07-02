@@ -6,7 +6,7 @@ try {
   exec(`git config user.name "GitHub Actions Bot" && git config user.email "action@github.com"`, (err) => {
     if (err) {
       core.error('Failed to set git user config');
-      core.setFailed(error.message);
+      core.setFailed(err.message);
       throw err;
     }
   });
