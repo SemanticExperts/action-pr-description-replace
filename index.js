@@ -16,7 +16,7 @@ try {
     find: core.getInput("find"),
     replace: core.getInput("replace"),
   };
-  const octokit = new github.GitHub(inputs.githubToken);
+  const octokit = github.getOctokit(inputs.githubToken);
 
   const params = {
     owner: github.context.repo.owner,
