@@ -10,6 +10,9 @@ inputs:
   replace:
     description: 'Replace found part with'
     default: ''
+  number:
+    description: 'Pull Request number'
+    default: ''
 outputs:
   body:
     description: 'New description body'

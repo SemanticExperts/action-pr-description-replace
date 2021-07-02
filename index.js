@@ -15,13 +15,14 @@ try {
     githubToken: core.getInput("github_token", { required: true }),
     find: core.getInput("find"),
     replace: core.getInput("replace"),
+    number: core.getInput("number"),
   };
   const octokit = github.getOctokit(inputs.githubToken);
 
   const params = {
     owner: github.context.repo.owner,
     repo: github.context.repo.repo,
-    pull_number: github.context.payload.pull_request.number,
+    pull_number: inputs.number || github.context.payload.pull_request.number,
     body: github.context.payload.pull_request.body,
   };
 
