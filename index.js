@@ -28,7 +28,7 @@ try {
 
   if (inputs.find) {
     core.info(`Replacing ${inputs.find}`);
-    params.body = params.body.replace(new RegExp(inputs.find, 'g'), inputs.replace);
+    params.body = params.body.replace(new RegExp(inputs.find, 'gm'), inputs.replace);
   }
 
   core.setOutput('body', params.body);
